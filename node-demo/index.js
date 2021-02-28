@@ -1,5 +1,7 @@
 const http = require('http')
+
 const path = require('path')
+
 const fs = require('fs')
 
 const server = http.createServer((req, res) => {
@@ -81,6 +83,7 @@ const server = http.createServer((req, res) => {
     } else {
       // Success
       res.writeHead(200, { 'Content-Type': contentType })
+
       res.end(content, 'utf8')
     }
   })

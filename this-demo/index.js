@@ -35,18 +35,18 @@
 // })
 
 // console.log(map1)
-
-// const source = [-3, -2, -1, 0, 1, 2, 3, 4, 5]
-// source
-//   .filter((n) => n >= 0)
-//   .map((n, index, arr) => {
-//     console.log(arr)
-//     console.log('src', source)
-//     // arr contains only non-negative numbers
-//     // here you may have some logic that rely on it
-//     return n
-//   })
-// console.log(source)
+// chaining of functions
+const source = [-3, -2, -1, 0, 1, 2, 3, 4, 5]
+source
+  .filter((n) => n >= 0)
+  .map((n, index, arr) => {
+    console.log(arr)
+    console.log('src', source)
+    // arr contains only non-negative numbers
+    // here you may have some logic that rely on it
+    return n
+  })
+console.log(source)
 
 function getBaseSpeed() {
   console.log('Base Speed Stat is : ', this.baseSpeed)
